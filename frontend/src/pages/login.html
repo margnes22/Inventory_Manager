@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Inventory Manager</title>
+    <link rel="stylesheet" href="/frontend/src/styles/login.css">
+</head>
+<body>
+<button class="back-button" onclick="location.href='home_page.html'" target="_self">◀ Volver</button>
+    <div class="wrap">
+        <div class="card" role="main">
+            <div class="header">
+                <div>
+                    <h1>Iniciar Sesión</h1>
+                    <p class="lead">¿Aún no tienes una cuenta? <a href="/frontend/src/pages/registro.html" class="link-muted">Crear nueva cuenta</a></p>
+                </div>
+                <div style="align-self:start">
+                </div>
+            </div>
+
+            <form id="loginForm" novalidate>
+                <label class="input">
+                    <span class="icon" aria-hidden>
+                        <!-- user icon -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                            <path d="M12 12a5 5 0 100-10 5 5 0 000 10z" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M20 21a8 8 0 10-16 0" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <input id="username" name="username" type="text" placeholder="Usuario" autocomplete="username" required>
+                </label>
+
+                <label class="input">
+                    <span class="icon" aria-hidden>
+                        <!-- lock icon -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="11" width="18" height="10" rx="2" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2"/>
+                            <path d="M7 11V8a5 5 0 0110 0v3" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <input id="password" name="password" type="password" placeholder="Contraseña" autocomplete="current-password" required>
+                    <span class="eye" id="togglePwd" title="Mostrar contraseña" aria-hidden>
+                        <!-- eye icon -->
+                        <svg id="eyeOpen" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2"/>
+                        </svg>
+                        <svg id="eyeClosed" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
+                            <path d="M17.94 17.94A10.94 10.94 0 0112 19c-6 0-10-7-10-7a20 20 0 015.31-6M9.9 9.9A3 3 0 0114.1 14.1" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 1l22 22" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </label>
+
+                <div class="row-between">
+                    <div class="small">¿olvidaste tu contraseña?</div>
+                    <a href="#" class="link-muted">Recuperar</a>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                </div>
+
+                <div class="or">
+                    <div style="flex:1;height:1px;background:rgba(255,255,255,0.03)"></div>
+                    <div style="white-space:nowrap;padding:0 8px;color:var(--muted)">o</div>
+                    <div style="flex:1;height:1px;background:rgba(255,255,255,0.03)"></div>
+                </div>
+
+                <div>
+                    <button type="button" id="googleBtn" class="btn btn-google">
+                        <span style="display:inline-flex;align-items:center;gap:10px">
+                            <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" style="width:18px;height:18px;filter:invert(1) contrast(120%);">
+                            Iniciar sesión con Google
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/frontend/src/scripts/login.js" defer></script>
+</body>
+</html>http://localhost:8000/

@@ -1,0 +1,190 @@
+
+    /* Estilos generales */
+    header{
+      font-family: "Libre Baskerville" / "Merriweather", serif;
+      height: 10%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 0px;
+      display: flex;
+    }
+    body {
+      margin: 0;
+      background-color: #000000;
+      color: #fff;
+      font-family: "Libre Baskerville" / "Merriweather", serif;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+    }
+
+    /* Contenedor de la barra */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      background-color: #000;
+      font-size: 30px;
+    }
+
+    /* Secciones izquierda y derecha */
+    .nav-left,
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+    }
+
+    /* Enlaces */
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+
+    }
+
+    .nav-link:hover {
+      transform: scale(1.08);
+      color: #bcfcbf;
+      transition: 0.3s;
+    }
+
+    /* Logo y texto */
+    .logo-section {
+      display: flex;
+      align-items: center;
+
+      margin: 0 50px;
+      color: white;
+    }
+
+    .logo-section:hover {
+      transform: scale(1.08);
+      color: #bcfcbf;
+      transition: 0.3s;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Idioma */
+    .lang {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 35px;
+      margin: 0 50px;
+    }
+
+    .lang select {
+      background: #000;
+      color: #fff;
+      border: 1px solid #333;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .lang select:focus {
+      outline: none;
+      border-color: #555;
+    }
+
+    .boton {
+      background-color: #ffffff;
+      color: black;
+      border: none;
+      padding: 15px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 15px;
+      transform: scale(1.08);
+    }
+
+    .boton:hover {
+      background-color: #bcfcbf;
+      color: rgb(0, 0, 0);
+      transition: 0.3s;
+    }
+
+    .caja1 {
+      border: 2px solid #000000;
+      height: 240px;
+      display: inline-block;
+      width: 40%;
+      text-align: center;
+      justify-content: center;
+      line-height: 40px;
+      font-size: 20px;
+    }
+
+    .caja2 {
+      border: 2px solid #000000;
+      display: inline-block;
+      height: 240px;
+      width: 60%;
+      color: rgb(141, 141, 141);
+      font-size: 10px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 14px;
+  padding: 10px 0; /* altura controlada */
+  margin-top: 0; /* elimina separación extra */
+}
+
+/* Contenedor principal */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    /* Estrellas decorativas */
+    .star {
+      position: absolute;
+      color: #ccc;
+      font-size: 24px;
+      opacity: 0.8;
+    }
+
+    /* Posiciones personalizadas */
+    .star1 { top: 20%; left: 10%; }
+    .star2 { top: 5%; right: 15%; }
+    .star3 { bottom: 10%; left: 20%; }
+    .star4 { bottom: 8%; right: 10%; }
+    .star5 { top: 50%; left: 5%; }
+
+    .Image{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    span{
+      text-decoration: none;
+    }
+
+    .logo1{
+      background-color: #000000;
+      color: #ffffff;
+      cursor: pointer;
+      border-radius: none;
+      border: none;
+      padding: 20px 20px;
+      font-size: 20px;
+      font-family: "Libre Baskerville" / "Merriweather", serif;
+    }
