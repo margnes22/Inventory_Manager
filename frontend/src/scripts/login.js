@@ -43,7 +43,7 @@
             if(success){
                 // reemplaza por la URL real en producción
                 alert('Inicio de sesión exitoso (demo)');
-                // location.href = '/dashboard.html';
+                location.href = '/frontend/src/pages/dashboard-copy.html';
             }
         });
     }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - Inventory Manager</title>
+    <link rel="stylesheet" href="/frontend/src/styles/recup_contra1.css">
+</head>
+<body>
+<button class="back-button" onclick="location.href='/frontend/src/pages/recup_contra.html'" target="_self">◀ Volver</button>
+    <div class="wrap">
+        <div class="card" role="main">
+            <div class="header">
+                <div>
+                    <h1>Código de recuperación</h1><br>
+                    <p class="lead">Ingresa el código de 6 digitos que se envió a tu correo electrónico.</p>
+                </div>
+                <div style="align-self:start">
+                </div>
+            </div>
+
+            <div class="row-between">
+                <div class="small">Código de verificación.</div>
+            </div><br>
+
+
+            <form id="recoveryForm" novalidate>
+
+                <label class="input">
+                    <input id="code" name="code" type="text" inputmode="numeric" pattern="\\d{6}" maxlength="6" placeholder="_ _ _  _ _ _" autocomplete="one-time-code" required>
+                </label><br>
+
+                <div>
+                    <button type="submit" class="btn btn-primary" onclick="location.href='/frontend/src/pages/recup_contra2.html'" target="_self">Enviar</button>
+                </div>
+
+                <div class="or">
+                    <div style="flex:1;height:1px;background:rgb(175, 250, 185)"></div>
+                    <div style="white-space:nowrap;padding:0 8px;color:#bcfcbf">Inventory Manager</div>
+                <div style="flex:1;height:1px;background:rgb(175, 250, 185)"></div>
+            </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="/frontend/src/scripts/recup_contra1.js" defer></script>
+</body>
+</html>

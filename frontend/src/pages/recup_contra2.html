@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - Inventory Manager</title>
+    <link rel="stylesheet" href="/frontend/src/styles/recup_contra2.css">
+</head>
+<body>
+<button class="back-button" onclick="location.href='/frontend/src/pages/recup_contra1.html'" target="_self">◀ Volver</button>
+    <div class="wrap">
+        <div class="card" role="main">
+            <div class="header">
+                <div>
+                    <h1>Nueva contraseña</h1><br>
+                    <p class="lead">Crear nueva contraseña.</a></p>
+                </div>
+                <div style="align-self:start">
+                </div>
+            </div>
+
+            <div class="row-between">
+                <div class="small">Nueva contraseña</div>
+            </div><br>
+
+            <form id="resetForm" novalidate>
+                <label class="input">
+                    <span class="icon" aria-hidden>
+                        <!-- lock icon -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="11" width="18" height="10" rx="2" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2"/>
+                            <path d="M7 11V8a5 5 0 0110 0v3" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <input id="password1" name="password1" type="password" placeholder="Contraseña" autocomplete="new-password" required>
+                    <span class="eye" id="togglePwd1" title="Mostrar contraseña" aria-hidden>
+                        <!-- eye icon -->
+                        <svg id="eyeOpen1" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2"/>
+                        </svg>
+                        <svg id="eyeClosed1" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
+                            <path d="M17.94 17.94A10.94 10.94 0 0112 19c-6 0-10-7-10-7a20 20 0 015.31-6M9.9 9.9A3 3 0 0114.1 14.1" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 1l22 22" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </label>
+            
+            <div class="row-between">
+                <div class="small">Verificar contraseña</div>
+            </div>
+
+                <label class="input">
+                    <span class="icon" aria-hidden>
+                        <!-- lock icon -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="11" width="18" height="10" rx="2" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2"/>
+                            <path d="M7 11V8a5 5 0 0110 0v3" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <input id="password2" name="password2" type="password" placeholder="Contraseña" autocomplete="new-password" required>
+                    <span class="eye" id="togglePwd2" title="Mostrar contraseña" aria-hidden>
+                        <!-- eye icon -->
+                        <svg id="eyeOpen2" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2"/>
+                        </svg>
+                        <svg id="eyeClosed2" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
+                            <path d="M17.94 17.94A10.94 10.94 0 0112 19c-6 0-10-7-10-7a20 20 0 015.31-6M9.9 9.9A3 3 0 0114.1 14.1" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 1l22 22" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </label>
+
+                <div>
+                    <button type="submit" class="btn btn-primary" onclick="location.href='/frontend/src/pages/login.html'" target="_self">Guardar contraseña</button>
+                </div>
+            </form>
+
+            <div class="or">
+                <div style="flex:1;height:1px;background:rgb(175, 250, 185)"></div>
+                <div style="white-space:nowrap;padding:0 8px;color:#bcfcbf">Inventory Manager</div>
+                <div style="flex:1;height:1px;background:rgb(175, 250, 185)"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/frontend/src/scripts/recup_contra2.js" defer></script>
+</body>
+</html>
