@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #2c3e50;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  
+}
+
+.menu-principal,
+.menu-secundario {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-principal li,
+.menu-secundario li {
+  margin: 35px 0;
+  cursor: pointer;
+}
+.menu-principal li:hover,
+.menu-secundario li:hover {
+    background-color: #e0e7ff;
+    color: #1e40af;
+}
+.menu-bottom {
+  margin-top: auto;
+}
+
+.btn-logout {
+  margin-top: 20px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+.main h1 {
+  margin-bottom: 20px;
+}
+
+.btn-agregar {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #2980b9;
+  color: white;
+}
+
+.acciones button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.editar {
+  background-color: #27ae60;
+  color: white;
+}
+
+.eliminar {
+  background-color: #c0392b;
+  color: white;
+}
+
+.btn-atras {
+  margin-top: 20px;
+  background-color: #3498db;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* más largo */
+  background-color: #34495e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.header-left {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.buscador {
+  width: 500px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.header-right {
+  font-size: 16px;
+  margin-right: 70px; /* lo acerca al centro */
+}
+
+.container {
+  display: flex;
+  margin-top: 80px; /* ajustado al nuevo alto del header */
+}
+

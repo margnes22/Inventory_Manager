@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Proveedores</title>
+  <link rel="stylesheet" href="../styles/proveedores.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">Inventory Manager</div>
+  
+  <div class="header-center">
+    <input type="text" placeholder="Buscar proveedor..." class="buscador">
+  </div>
+  
+  <div class="header-right">Bienvenido, David</div>
+</header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Administrador</h2>
+      <ul class="menu-principal">
+        <li>Ventas</li>
+        <li>Proveedores</li>
+        <li>Productos</li>
+        <li>Reportes</li>
+      </ul>
+
+      <div class="menu-bottom">
+        <ul class="menu-secundario">
+          <li>Configuración</li>
+          <li>Pagos</li>
+          <li>Usuarios</li>
+        </ul>
+        <button class="btn-logout" onclick="location.href='login.html'">Cerrar sesión</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <h1>Proveedores</h1>
+      <button class="btn-agregar">+ Agregar proveedor</button>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Categoría</th>
+            <th>Correo Electrónico</th>
+            <th>Teléfono</th>
+            <th>Fecha Registro</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Carlos</td>
+            <td>Ventura</td>
+            <td>Verdura</td>
+            <td>carlos@gmail.com</td>
+            <td>123456789</td>
+            <td>2023-01-01</td>
+            <td>Inactivo</td>
+            <td class="acciones">
+              <button class="editar">Editar</button>
+              <button class="eliminar">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>David</td>
+            <td>Mejía</td>
+            <td>Frutas</td>
+            <td>frut@gmail.com</td>
+            <td>987654321</td>
+            <td>2023-01-01</td>
+            <td>Activo</td>
+            <td class="acciones">
+              <button class="editar">Editar</button>
+              <button class="eliminar">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn-atras" onclick="location.href='dashboard-copy.html'">Atrás</button>
+    </div>
+  </div>
+</body>
+</html>
