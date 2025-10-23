@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5">
+  <div class="card shadow p-4">
+    <h3 class="mb-4 text-center">🧾 Registrar Nueva Venta</h3>
+
+    <form method="post" class="needs-validation">
+      {% csrf_token %}
+      <label for="id_cliente" class="form-label">Cliente</label>
+        {{ form.cliente }}
+      {{ form.as_p }}
+
+      <button type="submit" class="btn btn-success w-100 mt-3">💾 Guardar Venta</button>
+      <a href="{% url 'ventas:lista_ventas' %}" class="btn btn-secondary w-100 mt-2">⬅️ Volver</a>
+    </form>
+  </div>
+</div>
+{% endblock %}

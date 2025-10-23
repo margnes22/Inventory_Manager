@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ayuda | Inventory Manager</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #0d0d0d; color: white; font-family: 'Poppins', sans-serif; }
+    .container { padding: 5rem 2rem; max-width: 900px; }
+    h1 { font-weight: 600; margin-bottom: 2rem; }
+    p, li { color: #bbb; line-height: 1.7; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Centro de Ayuda</h1>
+    <p>Encuentra aquí respuestas a las preguntas más comunes:</p>
+    <ul>
+      <li>¿Cómo registro un nuevo producto en el inventario?</li>
+      <li>¿Cómo actualizo los datos de mis proveedores?</li>
+      <li>¿Puedo generar reportes automáticos?</li>
+      <li>¿Cómo restablezco mi contraseña?</li>
+    </ul>
+    <p>Si no encuentras lo que buscas, puedes contactarnos directamente.</p>
+    <a href="{% url 'contactanos' %}" class="btn btn-light mt-3">Contactar soporte</a>
+  </div>
+</body>
+</html>
